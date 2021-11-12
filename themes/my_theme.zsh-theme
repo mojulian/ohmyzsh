@@ -55,10 +55,10 @@ git_prompt() {
    echo "$(arrow_start) $(git_prompt_info) $(arrow_end)"
 }
 where_am_I() {
-   echo "👁 👉🏼: %{$reset_color%}%{$fg[white]%}[%~]"
+   echo "👉🏼:%{$reset_color%}%{$fg[white]%} [%~] 👁 : [%M] "
 }
 who_am_I() {
-   echo "🚀 $fg_bold[white]%}[/dev/%y]%{$reset_color%}"
+   echo "🚀: $fg_bold[white]%}[/dev/%y]%{$reset_color%}"
 }
 correct_or_not() {
     echo "%(?.👌🏼.🤬)"
